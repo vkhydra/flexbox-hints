@@ -1,0 +1,6 @@
+.pai {
+  display: flex;
+}
+.filho {
+  margin: 0 10px;
+}

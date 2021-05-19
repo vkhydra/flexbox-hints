@@ -1,0 +1,12 @@
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  list-style: none;
+  display: flex;
+}
+.menu-item {
+  margin: 0 10px;
+}
