@@ -85,3 +85,13 @@ Para isso, utilizaremos o comando <code>flex-wrap</code>. Esse comando poderá r
 Lembrando que é recomendável que o elemento pai tenha um valor de altura.
 
 ![Exemplo da utilização de flex-wrap](./img/wrap.jpeg)
+
+## 7° O flex-flow é um atalho bem útil...
+
+Para usar <code>flex-direction</code> e <code>flex-wrap</code> de uma vez só podemos utilizar o <code>flex-flow</code>. Ele recebe dois parâmetros, o primeiro indicará se é uma coluna ou uma linha, o segundo se é um quebra linha ou não:
+
+```css
+ {
+  flex-flow: [row/column] [wrap/nowrap];
+}
+```
