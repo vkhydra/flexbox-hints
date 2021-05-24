@@ -1,6 +1,8 @@
 # Flexbox
 
+Informações com referências de cursos da [Alura](https://cursos.alura.com.br) e de um projeto feito na ORIGAMID, o qual não sou autor. As refências do mesmo e outras informações podem ser encontradas no rodapé próprio site.
 
+[Link do projeto](https://origamid.com/projetos/flexbox-guia-completo/)
 
 # Como usar o Flexbox
 
@@ -59,3 +61,30 @@ classe-pai {
 ```
 
 ![Exemplos de espaços com between e around.](./img/4-around.jpeg)
+
+## 5° - Organizar itens em colunas...
+
+Lembrando que para utilizar comandos flex, precisamos que a classe pai, referente ao filho que estamos trabalhando, receba <code>display: flex;</code>. Com isso feito, utilizaremos <code>flex-direction</code>, o qual define a direção dos itens. Para esse caso utilizaremos a propriedade <code>column</code>. Ela separa cada item do pai em colunas.
+
+**_Obs:_** Por padrão de sistema, o <code>flex-direction</code> tem como parâmetro <code>row</code>, ou seja, em linha.
+
+![Exemlplo da utilização de column](./img/column.jpeg)
+
+## 6° Quebrar linhas...
+
+Para isso, utilizaremos o comando <code>flex-wrap</code>. Esse comando poderá receber 3 parâmetros:
+
+```css
+ {
+  flex-wrap: nowrap;
+  // Valor padrão, não permite a quebra de linha.
+  flex-wrap: wrap;
+  // Quebra a linha assim que um dos flex itens não puder mais ser compactado.
+  flex-wrap: wrap-reverse;
+  // Quebra a linha assim que um dos
+}
+```
+
+Lembrando que é recomendável que o elemento pai tenha um valor de altura.
+
+![Exemplo da utilização de flex-wrap](./img/wrap.jpeg)
