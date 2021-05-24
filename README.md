@@ -77,11 +77,8 @@ Para isso, utilizaremos o comando <code>flex-wrap</code>. Esse comando poderá r
 ```css
  {
   flex-wrap: nowrap;
-  Valor padrão, não permite a quebra de linha.
   flex-wrap: wrap;
-  Quebra a linha assim que um dos flex itens não puder mais ser compactado.
   flex-wrap: wrap-reverse;
-  Quebra a linha assim que um dos
 }
 ```
 
