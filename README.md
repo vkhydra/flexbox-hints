@@ -104,14 +104,14 @@ Para alterar a ordem precisamos usar o <code>order: n</code>. Por padrão, os it
 - item 2: order: 3
 - item 4: order: 3
 
-![Exemplo da utilização de order](.\img\order.jpeg)
+![Exemplo da utilização de order](img\order.jpeg)
 
 ## 9° Faça os itens crescerem como o Super Mario ao pegar um cogumelo.
 
 Infelizmente o flexbox não tem um cogumelo, mas podemos usar o <code>flex-grow: n;</code>. Devemos dar um número para definir a proporção que o item irá crescer. Por padrão o <code>flex-grow</code> tem <code>0</code> como valor.
 Se dois itens filhos do mesmo pai estiverem utilizando flex grow, o espaço será dividido proporcionalmente com o valor que colocar no item.
 
-![Exemplo da utilização de flex grow](.\img\grow.jpeg)
+![Exemplo da utilização de flex grow](img\grow.jpeg)
 
 ## 10° Agora o inverso, vamos diminuir...
 
