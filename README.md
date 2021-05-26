@@ -1,8 +1,6 @@
 # Flexbox
 
-Informações com referências de cursos da [Alura](https://cursos.alura.com.br) e de um projeto feito na ORIGAMID, o qual não sou autor. As refências do mesmo e outras informações podem ser encontradas no rodapé próprio site.
-
-[Link do projeto](https://origamid.com/projetos/flexbox-guia-completo/)
+Informações com referências de cursos da [Alura](https://cursos.alura.com.br), site da [MDN](https://developer.mozilla.org/) e de um projeto feito na [ORIGAMID](https://origamid.com/projetos/flexbox-guia-completo/), o qual não sou autor. As refências do mesmo e outras informações podem ser encontradas no rodapé próprio site.
 
 # Como usar o Flexbox
 
@@ -84,7 +82,7 @@ Para isso, utilizaremos o comando <code>flex-wrap</code>. Esse comando poderá r
 
 Lembrando que é recomendável que o elemento pai tenha um valor de altura.
 
-![Exemplo da utilização de flex-wrap](./img/wrap.jpeg)
+![Exemplo da utilização de flex wrap](./img/wrap.jpeg)
 
 ## 7° O flex-flow é um atalho bem útil...
 
@@ -93,5 +91,58 @@ Para usar <code>flex-direction</code> e <code>flex-wrap</code> de uma vez só po
 ```css
  {
   flex-flow: [row/column] [wrap/nowrap];
+}
+```
+
+## 8° Alterar ordem de itens flex (classes/tags filhos)
+
+Para alterar a ordem precisamos usar o <code>order: n</code>. Por padrão, os itens flex possuem um <code>order: 0;</code>. Se temos apenas um item que quermos colocar antes de todos os outros itens, colocamos <code>order: -1;</code>, e para colocá-lo na última posição colocamos <code>order: 1;</code>. Podemos também utilizar para ordenar conforme uma base de números que escolhermos, por exemplo:
+
+- item 3: order: 1
+- item 5: order: 1
+- item 1: order: 2
+- item 2: order: 3
+- item 4: order: 3
+
+![Exemplo da utilização de order](.\img\order-property.png)
+
+## 9° Faça os itens crescerem como o Super Mario ao pegar um cogumelo.
+
+Infelizmente o flexbox não tem um cogumelo, mas podemos usar o <code>flex-grow: n;</code>. Devemos dar um número para definir a proporção que o item irá crescer. Por padrão o <code>flex-grow</code> tem <code>0</code> como valor.
+Se dois itens filhos do mesmo pai estiverem utilizando flex grow, o espaço será dividido proporcionalmente com o valor que colocar no item.
+
+![Exemplo da utilização de flex grow](.\img\flex-grow.svg)
+
+## 10° Agora o inverso, vamos diminuir...
+
+O <code>flex-shrink: n;</code> faz esse trabalho para a gente.
+Ao diminuir a resolução da tela, ele faz o trabalho de diminuir certos itens mais do que os outros, sendo que ele recebe um valor proporcional também, como no <code>flex-grow</code>
+
+## 11° Propriedades do flex-container(pai) e do flex-itens(filho):
+
+### Flex-container:
+
+```css
+ {
+  display: flex; => Necessário para o funcionamento do flexbox
+  flex-direction: ;
+  justify-content: ;
+  flex-wrap: ;
+  flex-flow: ;
+  align-items: ;
+  align-content: ;
+}
+```
+
+### Flex-itens
+
+```css
+ {
+  order: ;
+  flex-grow: ;
+  flex-shrink: ;
+  flex-basis: ;
+  flex: ;
+  align-self: ;
 }
 ```
