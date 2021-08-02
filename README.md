@@ -23,7 +23,7 @@ Para esta ação, devemos apenas adicionar o seguinte parâmetro a classe pai:
 ```css
 classe-pai {
     ...
-  align-items: centro;
+  align-items: center;
 }
 ```
 
